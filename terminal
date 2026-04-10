@@ -1,0 +1,10 @@
+go mod init golang-learn
+go run main.go
+Go ki official formatter hai
+Ye automatically indentation fix kar deta hai
+
+spaces aur alignment theek kar deta hai
+go fmt const.go
+
+cd"health checker"
+go run .

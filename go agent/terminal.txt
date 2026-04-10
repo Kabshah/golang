@@ -1,0 +1,14 @@
+go mod init
+go mod tidy (installs packages)
+go run .
+go run main.go
+
+
+
+$body = @{
+    favourite_season = "summer"
+    hobbies = @("hiking","swimming")
+    budget = 2000
+} | ConvertTo-Json
+
+Invoke-RestMethod -Uri http://localhost:8080/vacation/create -Method Post -Body $body -ContentType "application/json"
